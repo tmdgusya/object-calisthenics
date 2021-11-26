@@ -2,6 +2,11 @@ public class TwoSum {
 
     public int[] twoSum(int[] nums, int target) {
         int[] answer = new int[2];
+        answer = getSumOfFirstIndexAndSecondIndexEqualsTarget(nums, target, answer);
+        return answer;
+    }
+
+    public int[] getSumOfFirstIndexAndSecondIndexEqualsTarget(int[] nums, int target, int[] answer) {
         for (int firstIndex = 0; firstIndex < nums.length; firstIndex++) {
             answer = fixedSecondIndex(nums, target, firstIndex, answer);
         }
