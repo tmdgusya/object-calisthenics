@@ -18,4 +18,9 @@ public class Board {
         return new ArrayList<Location>();
     }
 
+    public void redTeamAddScore() {
+        BaseBallScore redTeamScore = new BaseBallScore();
+        redTeamScore.addScore(1);
+    }
+
 }
